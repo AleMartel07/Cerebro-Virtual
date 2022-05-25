@@ -716,7 +716,7 @@ width: 425px;
             .titulo{
                 display: flex;
             flex-direction: column;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
             }
             .parrafo-ppal{
                 display: flex;
