@@ -60,8 +60,8 @@ grid-template-columns: repeat(3, 1fr);
 grid-template-rows: repeat(4, auto);
 grid-template-areas:
 'header     header     header'
-'planes     planes     planes'
-'boton_ppal  boton_ppal  boton_ppal'
+'bases  bases bases'
+'bases2 bases2 bases2'
 'footer     footer     footer' ;
 background: center/cover url(../imagenes/index/fomr2.png) no-repeat;
 }
@@ -163,169 +163,53 @@ margin-right: 8em;
 } 
 
 /*EMPIEZA EL BODY*/
-.planes{
-    grid-area: planes;
-    display: flex;
-    justify-content: center;
-    gap: 3em;
-    margin-top: 5em;
+.bases{
+    grid-area: bases;
+width: 37em;
+border: #00747C 2px solid;
+padding: 0.5em;
+border-radius: 0.5em;
+display: flex;
+flex-direction: column;
+justify-self: center;
+margin-top: 5em;
+box-shadow: 1px 1px 1px 1px #00BBC9  ;
+background-color: #fcfcfc;
 }
-.box{
-    display: flex;
-    flex-direction: column;
-    width: 20em;
-    height: 30em;
-    border-top: #00BBC9 solid 0.7em;
-    border-left: #00BBC9 solid 1px;
-    border-right: #00BBC9 solid 1px;
-    border-bottom: #00BBC9 solid 1px;
-    margin-top: 3em;
-   border-radius: 1em;
-    justify-content: space-between;
-    background-color: #fcfcfc;
+.bases h1{
+margin-left: 0.2em;
+align-self: center;
+font-family: 'Fira Sans', sans-serif;
+color: #00747C;
+}
+.bases p{
+    margin-left: 0.2em;
     font-family: 'Hind Madurai', sans-serif;
+    color:rgba(80, 80, 80, 1);
 }
-
-.titulo{
-    display: flex;
-    flex-direction: row;
-    width: 20em;
-    height: 5em;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Fira Sans', sans-serif;
-    color: rgba(0, 116, 124, 1);
+.bases2{
+    grid-area: bases2;
+width: 37em;
+border: #00747C 2px solid;
+padding: 0.5em;
+border-radius: 0.5em;
+display: flex;
+flex-direction: column;
+justify-self: center;
+margin-top: 1em;
+box-shadow: 1px 1px 1px 1px #00BBC9  ;
+background-color: #fcfcfc;
 }
-.precio{
-    display: flex;
-    flex-direction: row;
-    width: 20em;
-    height: 4em;
-    justify-content: center;
-    align-items: center;
-    background-color:#00BBC9;
-    opacity: 0.6;
-}
-.caracteristica{
-    display: flex;
-    flex-direction: column;
-    width: 20em;
-    height: 9em;
-    justify-content: center;
-    align-items: center;
-    border-bottom: grey solid 1px;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    gap: 1em;
-}
-.caracteristica p{
-    display: flex;
-    flex-direction: row;
-    margin: 3px;
-    text-align: center;
-}
-.condiciones{
-    display: flex;
-    flex-direction: column;
-    width: 20em;
-    height: 5em;
-    justify-content: center;
-    align-items: center;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    gap: 0.5em;
-}
-.condiciones p{
-    display: flex;
-    flex-direction: row;
-    margin: 3px;
-    text-align: center;
-}
-.buy_now{
-    display: flex;
-    flex-direction: row;
-    width: 10em;
-    height: 2em;
-    justify-content: center;
-    align-items: center;
+.bases2 h1{
     align-self: center;
-    background-color: #00BBC9;
-    border-radius: 1.7em;
-    margin-bottom: 5px;
+    font-family: 'Fira Sans', sans-serif;
+    color: #00747C;
 }
-.buy_now a{
-    color: white;
-    text-decoration: none;
-    font-size: 1.2em;
-    height: 1.5em;
-    font-family: 'Gentium Basic', serif;
-}
-.sidebar{
-    display: flex;
-    flex-direction: column;
-    width: 22em;
-    height: 30em;
-    border: #00BBC9 solid 1px;
-    margin-top: 0em;
-    margin-left: 10em;
-    background-color: #fcfcfc;
-    justify-content: flex-start;
-    border-radius: 1em;
-}
-.form1{
-    display: flex;
-    flex-direction: column;
-    gap: 0.9em;
-    width: 20em;
-    height: 30em;
-    margin-left: 1em;
+.bases2 li{
+    margin-left: 0.2em;
     font-family: 'Hind Madurai', sans-serif;
+    color:rgba(80, 80, 80, 1);
 }
-.form1 h1{
-    font-family: 'Fira Sans', sans-serif;
-    font-size: 1.8em;
-    color: rgba(0, 116, 124, 1);
-}
-.boton{
-    display: flex;
-    flex-direction: column;
-    width: 10em;
-    height: 2em;
-    justify-content: center;
-    align-items: center;
-    align-self: center;
-    background-color: #00BBC9;
-    border-radius: 1.7em;
-    margin-bottom: 5px;
-}
-.boton2{
-    background-color: #00BBC9;
-    border-radius: 1.7em;
-    width: 10em;
-    height: 2em;
-    color: white;
-    text-decoration: none;
-    font-family: 'Gentium Basic', serif;
-}
-.boton3{
-    background-color: #00BBC9;
-    border-radius: 1.7em;
-    width: 10em;
-    height: 2em;
-    font-size: 2.5em;
-    color: white;
-    text-decoration: none;
-    box-shadow: 0 0 6px 4px rgba(0, 116, 124, 1);
-    font-family: 'Gentium Basic', serif;
-}
-.boton_ppal{
-    grid-area: boton_ppal;
-    display: flex;
-    justify-self: center;
-    margin-top: 5em;
-    margin-right: 35em;
-}
-
 /*EMPIEZA EL FOOTER*/
 footer{
     background-color:rgba(0, 116, 124, 1);
@@ -430,114 +314,28 @@ color: #fcfcfc;
 margin-top: 0.3em;
 font-family: 'Fira Sans', sans-serif;
 }
+
 @media screen and  (max-width: 1024px)
 {
     .container{
         width: 100%;
         max-width: 64em;
+        height: auto;
         display: grid; 
+        
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(4, auto);
         grid-template-areas:
         'header     header     header'
-        'planes     planes     planes'
-        'boton_ppal  boton_ppal  boton_ppal'
+        'bases  bases bases'
+        'bases2 bases2 bases2'
         'footer     footer     footer' ;
+        background: center/cover url(../imagenes/index/fomr2.png) no-repeat;
         }
     /*Header*/
-    .nav-ppal{
-        display: flex;
-        align-items: flex-end;
-        justify-content:end;
         
-        }
-        .nav-ppal ul{
-            padding: 0;
-            margin: 0.2em;
-            display: flex;
-            flex-direction: row;
-        }
-        
-        .nav-ppal ul li{
-            display: flex;
-            border-radius: 1em;
-            width: 7.5em;
-            margin: 0.1em;
-            height: 1.9em;
-            justify-content:space-around;
-        }
-        .nav-ppal ul li a{
-            color: rgba(255, 255, 255, 1);
-            text-decoration: none;
-            font-family: 'Cabin', sans-serif;
-            font-size:1.3em;
-            margin-top: 0.1em;
-        }
-.nav-ppal li:hover, .nav-ppal li:hover li
-{
-background-color:rgba(0, 187, 201, 1);
-width: 7.5em;
-margin: 0.1em;
-height: 1.9em;
-}
-#distinto1:hover, #distinto1:hover #distinto1{
-border-radius: 1em;
-width: 7.5em;
-margin: 0.1em;
-height: 1.9em;
-} 
-#distinto2:hover, #distinto2:hover #distinto2{
-color: rgba(0, 187, 201, 1);
-font-size:1.3em;
-margin-top: 0.1em;
-} 
     /*Body*/
-    .planes{
-        grid-area: planes;
-        display: flex;
-        justify-content: center;
-        gap: 3em;
-        margin-top: 5em;
-        flex-wrap: wrap;
-    }
-    .box{
-        display: flex;
-        flex-direction: column;
-        width: 20em;
-        height: 30em;
-        border-top: #00BBC9 solid 0.7em;
-        border-left: #00BBC9 solid 1px;
-        border-right: #00BBC9 solid 1px;
-        border-bottom: #00BBC9 solid 1px;
-        margin-top: 3em;
-       border-radius: 1em;
-        justify-content: space-between;
-        background-color: #fcfcfc;
-        font-family: 'Hind Madurai', sans-serif;
-    }
-    .sidebar{
-        display: flex;
-        flex-direction: column;
-        width: 22em;
-        height: 30em;
-        border: #00BBC9 solid 1px;
-        margin-top: 3em;
-        margin-left: 0em;
-        background-color: #fcfcfc;
-        justify-content: flex-start;
-        border-radius: 1em;
-        border-top: #00BBC9 solid 0.7em;
-    border-left: #00BBC9 solid 1px;
-    border-right: #00BBC9 solid 1px;
-    border-bottom: #00BBC9 solid 1px;
-    }
-    .boton_ppal{
-        grid-area: boton_ppal;
-        display: flex;
-        justify-self: center;
-        margin-top: 5em;
-        margin-right: 0em;
-    }
+    
 /*Footer*/
     footer{
         background-color:rgba(0, 116, 124, 1);
@@ -580,15 +378,18 @@ align-self: center;
 {
     .container{
         width: 100%;
-        max-width: 48em;
+        max-width: 120em;
+        height: auto;
         display: grid; 
+        
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(4, auto);
         grid-template-areas:
         'header     header     header'
-        'planes     planes     planes'
-        'boton_ppal  boton_ppal  boton_ppal'
+        'bases  bases bases'
+        'bases2 bases2 bases2'
         'footer     footer     footer' ;
+        background: center/cover url(../imagenes/index/fomr2.png) no-repeat;
         }
     /*Header*/
     .nav-ppal{
@@ -638,52 +439,6 @@ font-size:1.3em;
 margin-top: 0.1em;
 } 
 /*Body*/
-.planes{
-    grid-area: planes;
-    display: flex;
-    justify-content: center;
-    gap: 3em;
-    margin-top: 1em;
-    flex-wrap: wrap;
-}
-.box{
-    display: flex;
-    flex-direction: column;
-    width: 20em;
-    height: 30em;
-    border-top: #00BBC9 solid 0.7em;
-    border-left: #00BBC9 solid 1px;
-    border-right: #00BBC9 solid 1px;
-    border-bottom: #00BBC9 solid 1px;
-    margin-top: 3em;
-   border-radius: 1em;
-    justify-content: space-between;
-    background-color: #fcfcfc;
-    font-family: 'Hind Madurai', sans-serif;
-}
-.sidebar{
-    display: flex;
-    flex-direction: column;
-    width: 22em;
-    height: 30em;
-    border: #00BBC9 solid 1px;
-    margin-top: 3em;
-    margin-left: 0em;
-    background-color: #fcfcfc;
-    justify-content: flex-start;
-    border-radius: 1em;
-    border-top: #00BBC9 solid 0.7em;
-    border-left: #00BBC9 solid 1px;
-    border-right: #00BBC9 solid 1px;
-    border-bottom: #00BBC9 solid 1px;
-}
-.boton_ppal{
-    grid-area: boton_ppal;
-    display: flex;
-    justify-self: center;
-    margin-top: 5em;
-    margin-right: 0em;
-}
 /*Footer*/
 footer{
         clear: auto;
@@ -752,15 +507,18 @@ footer{
 {  
     .container{
         width: 100%;
-        max-width: 48em;
+        max-width: 120em;
+        height: auto;
         display: grid; 
+        
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(4, auto);
         grid-template-areas:
         'header     header     header'
-        'planes     planes     planes'
-        'boton_ppal  boton_ppal  boton_ppal'
+        'bases  bases bases'
+        'bases2 bases2 bases2'
         'footer     footer     footer' ;
+        background: center/cover url(../imagenes/index/fomr2.png) no-repeat;
         }
         /*NAV Y HEADER*/
         header{
@@ -848,52 +606,32 @@ width: 425px;
             margin-top: 0.1em;
         } 
         /*EMPIEZA EL BODY*/
-        .planes{
-            grid-area: planes;
-            display: flex;
-            justify-content: center;
-            gap: 3em;
-            margin-top: 1em;
-            flex-wrap: wrap;
+        .bases{
+        grid-area: bases;
+        width: 380px;
+        border: #00747C 2px solid;
+        padding: 0.5em;
+        border-radius: 0.5em;
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        margin-top: 2em;
+        box-shadow: 1px 1px 1px 1px #00BBC9  ;
+        background-color: #fcfcfc;
         }
-        .box{
-            display: flex;
-            flex-direction: column;
-            width: 20em;
-            height: 30em;
-            border-top: #00BBC9 solid 0.7em;
-            border-left: #00BBC9 solid 1px;
-            border-right: #00BBC9 solid 1px;
-            border-bottom: #00BBC9 solid 1px;
-            margin-top: 3em;
-           border-radius: 1em;
-            justify-content: space-between;
-            background-color: #fcfcfc;
-            font-family: 'Hind Madurai', sans-serif;
-        }
-        .sidebar{
-            display: flex;
-            flex-direction: column;
-            width: 22em;
-            height: 30em;
-            border: #00BBC9 solid 1px;
-            margin-top: 3em;
-            margin-left: 0em;
-            background-color: #fcfcfc;
-            justify-content: flex-start;
-            border-radius: 1em;
-            border-top: #00BBC9 solid 0.7em;
-            border-left: #00BBC9 solid 1px;
-            border-right: #00BBC9 solid 1px;
-            border-bottom: #00BBC9 solid 1px;
-        }
-        .boton_ppal{
-            grid-area: boton_ppal;
-            display: flex;
-            justify-self: center;
-            margin-top: 2em;
-            margin-right: 0em;
-            margin-bottom: 2em;
+        .bases2{
+            grid-area: bases2;
+        width: 380px;
+        border: #00747C 2px solid;
+        padding: 0.5em;
+        border-radius: 0.5em;
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        box-shadow: 1px 1px 1px 1px #00BBC9  ;
+        background-color: #fcfcfc;
         }
         /*EMPIEZA EL FOOTER*/
         footer{
@@ -1017,5 +755,4 @@ width: 425px;
                 flex-wrap: wrap;
                 font-size: 0.9em;
             }  
-         
 }

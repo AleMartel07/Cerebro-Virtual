@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./imagenes/index/icon.ico" type="image/x-icon">
+    <title>Asistente Virtual</title>
+    <link rel="stylesheet" href="./estilos/normalize.css">
+    <link rel="stylesheet" href="./estilos/contacto.css">
+    <script src="./Script/Script-form.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@500&family=Cormorant+Garamond&family=Fira+Sans:wght@500&family=Gentium+Basic&family=Hind+Madurai:wght@300&family=Martel:wght@200;700&family=Merriweather+Sans:wght@300&family=Paytone+One&display=swap" rel="stylesheet">  
+</head>
+<body>
+<div class="container">  
+<header>
+<div class="logo">
+    <a class="logoa" href="./index.html"> <img class="logoindex" src="./imagenes/index/logo2.png" alt="Logo"> </a>
+    <h2>Cerebro Virtual</h2>
+</div>
+<nav class="nav-ppal">
+<ul class="lista-nav">
+    <li class="li1"><a href="./index.html"> Inicio </a> </li>
+    <li class="li1"><a href="./planes.html"> Planes </a></li>
+    <li class="li1"><a href="./Faq.html"> Faq </a></li>
+    <li class="li1" id="distinto1" > <a id="distinto2" href="./contacto.html">Contacto</a></li>
+</ul>
+</nav>
+</header>
+<section class="ppal">
+<div class="titulo">
+    <h1 class="titulo-ppal">Solicita información</h1>
+    <P class="parrafo-ppal"> Nos comunicaremos a la brevedad</P>
+</div>
+<form name="formulario" id="formulario" action="#">
+<div class="form1">
+<label for="Nombre y Apellido">Nombre y Apellido </label>
+<input type="text" id="nombre" name="nombre">
+<label for="Empresa">Empresa</label>
+<input type="text" id="empresa" name="empresa">
+<label for="Necesito Asistencia">Necesito asistencia</label>
+<select name="Necesito Asistencia" >
+    <option value="---">Seleccione</option>
+    <option value="Por proyecto"> Por proyecto</option>
+    <option value="Fijo">Fijo</option>
+    <option value="A demanda">A demanda</option>
+    <option value="Consultoria">Consultoria</option>
+</select>   
+<p id="p1" >Cuéntanos con qué necesitas ayuda en tu negocio</p>
+<div class="check_1">
+<input type="checkbox" id="asistente" name="asistente" value="Asistente Administrativo">
+<label for="asistente"> Asistente Administrativo</label>
+</div>
+<div class="check_1">
+<input type="checkbox" id="web" name="web" value="Crear tu web">
+<label for="web"> Crear tu web</label>
+</div>
+<div class="check_1">
+<input type="checkbox" id="marketing" name="marketing" value="Email marketing">
+<label for="marketing"> Email marketing</label>
+</div>
+<div class="check_1">
+<input type="checkbox" id="redes" name="redes" value="Redes Sociales">
+<label for="redes"> Redes Sociales</label>
+</div>
+<div class="check_1">
+<input type="checkbox" id="ads" name="ads" value="Campañas de Facebook Ads">
+<label for="redes"> Campañas de Facebook Ads</label>
+</div>
+<div class="check_1">
+<input type="checkbox" id="diseño" name="diseño" value="Diseño gráfico">
+<label for="diseño"> Diseño gráfico</label>
+</div>
+<div class="check_1">
+<input type="checkbox" id="textos" name="textos" value="Creación de textos (artículos, web, guías)">
+<label for="textos"> Creación de textos (artículos, web, guías)</label>
+</div>
+<div class="check_1">
+<input type="checkbox" id="plan" name="plan" value="Plan estratégico">
+<label for="plan"> Plan estratégico</label>
+</div>
+<div class="check_1">
+<input type="checkbox" id="otro" name="otro" value="Otros">
+<label for="otro"> Otros</label>
+</div>
+<label for="area"> </label>
+<textarea id="multilinea" name="Multilinea" placeholder="Ingrese su consulta" id="area" cols="30" rows="10" ></textarea>
+<div class="check_1" id="check-obligatorio">
+    <input type="checkbox" id="Bases" name="Bases" value="Bases">
+    <label for="Bases">Acepto la <a href="./Basesycondiciones.html" target=""> política de privacidad </a>  </label>
+</div>
+<div class="boton">
+    <div id="boton1"><button  type="reset"> Borrar</button></div>
+    <div id="boton2"><button  type="submit">Enviar </button></div>
+</div>
+</div>
+<div class="form2">
+<label for="email">Ingrese su email:</label>
+<input type="email" id="mail" name="mail">
+<label for="Zona o Pais">Zona Horaria o Pais de Residencia </label>
+<input type="text" id="zona" name="zona" >
+<label for="Disponiblidad">Disponiblidad</label>
+<select name="Disponiblidad">
+    <option value="---">Seleccione</option>
+    <option value="Mañanas"> Mañanas</option>
+    <option value="Tardes">Tardes</option>
+    <option value="Indiferente">Indiferente</option>
+</select>
+</div>
+</form> 
+</section>
+<div class="mapa"> 
+    <div class="ubicanos2"><div class="ubicanos"><h4>Ubicanos</h4></div></div>
+    <div class="iframe" >
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.2126194449725!2d-58.45678468425709!3d-34.598784664745224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccba130a4782b%3A0x5287cddfdc9dee72!2sCABA!5e0!3m2!1ses-419!2sar!4v1652219110744!5m2!1ses-419!2sar" width="52%" height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+</div>
+<footer>
+<div class="ppalfooter1">
+    <div class="logofooter">
+    <a class="logoafooter" href="./index.html"> <img class="logoindex1" src="./imagenes/index/logo3.png" alt="Logo"> </a>
+    </div>
+    <div class="listasfooter">
+        <ul class="ulfooter1">
+        <li class="li1footer1">
+        <span class="sub1footer1">EMPRESA</span>
+        <a class="a1footer1" href="./contacto.html">Contacto</a>
+        <a class="a1footer1" href="./planes.html">Planes</a>
+        </li>
+        <li class="li2footer1">
+        <span class="sub2footer1">INFORMACION</span>
+        <a class="a2footer1" target="_blank" href="./Basesycondiciones.html">Terminos y Condiciones</a>
+        <a class="a2footer1" target="_blank" href="./Faq.html">Faqs</a>
+        </li>
+        </ul>
+        <ul class="ulfooter2" >
+        <span class="sub3footer1">REDES SOCIALES</span>
+        <li class="li3footer1">
+                <a class="a3footer1" target="_blank" id="linkedin" href="https://www.linkedin.com/company/cerebro-virtual"><img src="./imagenes/index/linkedin-square-logo-36.png" alt="Linkedin" ></a>
+                <a class="a3footer1" target="_blank" id="instragram" href="https://www.instagram.com/cerebro.virtualok/"><img src="./imagenes/index/instagram-logo-36.png" alt="Instagram"></a>
+                <a class="a3footer1" target="_blank" id="twitter" href="https://twitter.com/VirtualCerebro"><img src="imagenes/index/twitter-logo-36.png" alt="Twitter"></a>
+        </li>
+        </ul>
+        </div>
+        </div>
+<div class="footer2">
+    <p>Cerebro Virtual</p>
+    <h4>/</h4>
+    <p>© 2022</p>
+    <h4>/</h4>
+    <p>Todos los Derechos Reservados</p>
+    </div>
+</footer>
+</div>
+</body>
+</html>
