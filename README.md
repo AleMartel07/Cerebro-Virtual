@@ -1,5 +1,7 @@
 # Cerebro-Virtual
 tp codo a codo
+estado: FINALIZADO
+Nombre: Martel Carlos Alejandro
 Consignas:
 Responsive: los 5 html son responsive en los siguientes puntos de corte: 1920px 1024px 768px 425px;
 Transition: index-gridarea.css linea 283 en la section-4, cuando se pasa el mouse se agranda el boton.
