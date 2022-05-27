@@ -308,6 +308,7 @@ width: 60%;
 display: flex;
 align-items: center;
 }
+/*TRANSFORM*/
 .logoindex1:hover {
 transform: rotate(900deg);
 }

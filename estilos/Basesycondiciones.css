@@ -161,7 +161,6 @@ margin-right: 8em;
     font-size:1.3em;
     margin-top: 0.1em;
 } 
-
 /*EMPIEZA EL BODY*/
 .bases{
     grid-area: bases;
@@ -232,6 +231,7 @@ width: 60%;
 display: flex;
 align-items: center;
 }
+/*TRANSFORM*/
 .logoindex1:hover {
 transform: rotate(900deg);
 }

@@ -280,6 +280,7 @@ margin-top: 1EM;
     font-size: 1em;
     margin-left: 0.3em;
 }
+/*TRANSITION*/
 .seccion-4{
     grid-area: seccion-4;
     display: flex;
@@ -328,6 +329,7 @@ width: 60%;
 display: flex;
 align-items: center;
 }
+/*TRANSFORM*/
 .logoindex1:hover {
 transform: rotate(900deg);
 }
