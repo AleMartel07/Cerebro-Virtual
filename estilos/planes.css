@@ -431,6 +431,152 @@ color: #fcfcfc;
 margin-top: 0.3em;
 font-family: 'Fira Sans', sans-serif;
 }
+@media screen and  (max-width: 1440px)
+{
+    .container{
+        width: 100%;
+        max-width: 90em;
+        display: grid; 
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas:
+        'header     header     header'
+        'planes     planes     planes'
+        'boton_ppal  boton_ppal  boton_ppal'
+        'footer     footer     footer' ;
+        }
+    /*Header*/
+    .nav-ppal{
+        display: flex;
+        align-items: flex-end;
+        justify-content:end;
+        
+        }
+        .nav-ppal ul{
+            padding: 0;
+            margin: 0.2em;
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .nav-ppal ul li{
+            display: flex;
+            border-radius: 1em;
+            width: 7.5em;
+            margin: 0.1em;
+            height: 1.9em;
+            justify-content:space-around;
+        }
+        .nav-ppal ul li a{
+            color: rgba(255, 255, 255, 1);
+            text-decoration: none;
+            font-family: 'Cabin', sans-serif;
+            font-size:1.3em;
+            margin-top: 0.1em;
+        }
+.nav-ppal li:hover, .nav-ppal li:hover li
+{
+background-color:rgba(0, 187, 201, 1);
+width: 7.5em;
+margin: 0.1em;
+height: 1.9em;
+}
+#distinto1:hover, #distinto1:hover #distinto1{
+border-radius: 1em;
+width: 7.5em;
+margin: 0.1em;
+height: 1.9em;
+} 
+#distinto2:hover, #distinto2:hover #distinto2{
+color: rgba(0, 187, 201, 1);
+font-size:1.3em;
+margin-top: 0.1em;
+} 
+    /*Body*/
+    .planes{
+        grid-area: planes;
+        display: flex;
+        justify-content: center;
+        gap: 3em;
+        margin-top: 5em;
+        flex-wrap: wrap;
+    }
+    .box{
+        display: flex;
+        flex-direction: column;
+        width: 20em;
+        height: 30em;
+        border-top: #00BBC9 solid 0.7em;
+        border-left: #00BBC9 solid 1px;
+        border-right: #00BBC9 solid 1px;
+        border-bottom: #00BBC9 solid 1px;
+        margin-top: 3em;
+       border-radius: 1em;
+        justify-content: space-between;
+        background-color: #fcfcfc;
+        font-family: 'Hind Madurai', sans-serif;
+    }
+    .sidebar{
+        display: flex;
+        flex-direction: column;
+        width: 22em;
+        height: 30em;
+        border: #00BBC9 solid 1px;
+        margin-top: 3em;
+        margin-left: 0em;
+        background-color: #fcfcfc;
+        justify-content: flex-start;
+        border-radius: 1em;
+        border-top: #00BBC9 solid 0.7em;
+    border-left: #00BBC9 solid 1px;
+    border-right: #00BBC9 solid 1px;
+    border-bottom: #00BBC9 solid 1px;
+    }
+    .boton_ppal{
+        grid-area: boton_ppal;
+        display: flex;
+        justify-self: center;
+        margin-top: 5em;
+        margin-right: 0em;
+    }
+/*Footer*/
+    footer{
+        background-color:rgba(0, 116, 124, 1);
+        grid-area: footer;
+        height:21em;
+        max-width: 90em;
+        display: flex;
+        flex-direction:column;
+        margin-top: 5em;
+        }
+        .ppalfooter1{
+            background-image: rgba(0, 116, 124, 1);
+            display: flex;
+            max-width: 90em;
+            height: 19em;
+        border-radius: 0.2em;
+        border-bottom: #fcfcfc solid 1px;
+        }
+        .logofooter{
+            width: 30%;
+            display: flex;
+            align-items: center;
+            
+            }
+            .listasfooter{
+                display: flex;
+                width: 100%;
+                flex-direction: column-reverse;
+                justify-content: space-around;
+                margin-left: 9%;
+                }
+                .ulfooter1{
+align-self: center;
+                }
+                .ulfooter2{
+                    align-self: center;
+                }
+}
 @media screen and  (max-width: 1024px)
 {
     .container{

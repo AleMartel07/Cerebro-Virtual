@@ -412,7 +412,129 @@ background-color: rgba(0, 116, 124, 1);
     margin-top: 0.3em;
     font-family: 'Fira Sans', sans-serif;
 }
-
+@media screen and  (max-width: 1440px)
+{
+    .container{
+        width: 100%;
+        max-width: 90em;
+        display: grid; 
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(8, auto);
+        grid-template-areas:
+        'header     header     header'
+        'encabezado encabezado encabezado'
+        'titulo     titulo     titulo'
+        'seccion-1  seccion-1  sidebar'
+        'seccion-2  seccion-2  sidebar'
+        'seccion-3  seccion-3  seccion-4'
+        'footer     footer     footer' ;
+        }
+    .sidebar{
+            background-color: rgba(0, 187, 201, 1);
+            grid-area: sidebar;
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            justify-self:end;
+            }
+    .encabezado{
+                background: center  url(../imagenes/index/technology-g90817b788_1920.jpg) no-repeat;
+                width: 90em;
+                height: 22em;
+                grid-area: encabezado;
+            }
+    .seccion-1{
+        grid-area: seccion-1;
+        margin-left: 1em;
+        display: flex;
+        flex-direction: row;
+        height: 15em;
+    }
+    .seccion-2{
+        grid-area: seccion-2;
+        margin-left: 1em;
+        margin-right: 1em;
+        display: flex;
+        flex-direction: row;
+        height: 15em;
+    }
+    .seccion-3{
+        grid-area: seccion-3;
+        margin-left: 1em;
+        margin-right: 1em;
+        display: flex;
+        flex-direction: row;
+        height: 15em;
+    }
+    .imagen{
+        display: flex;
+        height: 60%;
+        border-radius: 0.3em;
+        box-shadow: 0 0 4px 2px rgba(115, 115, 115, 1);
+        margin-left: 0.5em;
+        align-self: center;
+        margin-right: 0.5em;
+    }
+    .texto{
+        display: flex;
+        width: 70%;
+        align-self: center;
+    }
+    #p2{
+        margin-left: 2em;
+    }
+    .seccion-4{
+        grid-area: seccion-4;
+        display: flex;
+    width: 12em;
+    height: 4.5em;
+    justify-self: center;
+    align-self: center;
+    transition: width 2s, height 2s, transform 2s;
+    background-color: #00BBC9;
+    border-radius: 1.7em;
+    }
+    .seccion-4:hover {
+        width: 18em;
+        height: 5em;
+    }
+    footer{
+        background-color:rgba(0, 116, 124, 1);
+        grid-area: footer;
+        height:21em;
+        max-width: 90em;
+        display: flex;
+        flex-direction:column;
+        margin-top: 5em;
+        }
+        .ppalfooter1{
+            background-image: rgba(0, 116, 124, 1);
+            display: flex;
+            max-width: 90em;
+            height: 19em;
+        border-radius: 0.2em;
+        border-bottom: #fcfcfc solid 1px;
+        }
+        .logofooter{
+            width: 30%;
+            display: flex;
+            align-items: center;
+            
+            }
+            .listasfooter{
+                display: flex;
+                width: 100%;
+                flex-direction: column-reverse;
+                justify-content: space-around;
+                margin-left: 9%;
+                }
+                .ulfooter1{
+align-self: center;
+                }
+                .ulfooter2{
+                    align-self: center;
+                }
+}
 @media screen and  (max-width: 1024px)
 {
     .container{
