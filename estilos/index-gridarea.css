@@ -439,7 +439,7 @@ background-color: rgba(0, 116, 124, 1);
             }
     .encabezado{
                 background: center  url(../imagenes/index/technology-g90817b788_1920.jpg) no-repeat;
-                width: 90em;
+                max-width: 90em;
                 height: 22em;
                 grid-area: encabezado;
             }
